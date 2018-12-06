@@ -108,8 +108,8 @@ testWithServer("serves index.html", (t, done) => {
 testWithServer("serves files", (t, done) => {
   let tests = [
     ["jpg", "image/jpeg"],
-    ["js", "application/javascript"],
-    ["json", "application/json"]
+    ["js", "application/javascript; charset=UTF-8"],
+    ["json", "application/json; charset=UTF-8"]
   ].map(data =>
     got(`localhost:9000/cat.${data[0]}`).then(res => {
       t.equal(res.statusCode, 200, `${data[0]} successful`);

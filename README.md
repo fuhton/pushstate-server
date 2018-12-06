@@ -1,5 +1,7 @@
 # pushstate-server
 
+> This is a fork of [`pushstate-server`](https://github.com/scottcorgan/pushstate-server) to resolve some large npm dependency vulnerabilities.
+
 Static file server that works with HTML5 Pushstate.
 
 For example, the route ` /some/pushstate/route ` will return the ` index.html ` file. But, ` /some/static/path/logo.png ` will return the ` logo.png ` static file.
